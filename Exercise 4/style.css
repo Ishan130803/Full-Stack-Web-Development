@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1 : rgb(146, 146, 244);
+    --color2 : rgb(71, 193, 227);
+    --color3 : rgb(184, 228, 118);
+    --color4 : rgb(195, 57, 186);
+}
+
+nav {
+    background-color: antiquewhite;
+    height: 100px;
+    box-sizing: border-box;
+    padding: auto;
+}
+
+nav ul {
+    padding: 10px auto;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid black;
+    margin: 20px 5px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+nav ul li:nth-child(1) {
+    background-color: var(--color1)
+}
+nav ul li:nth-child(2) {
+    background-color: var(--color2)
+}
+nav ul li:nth-child(3) {
+    background-color: var(--color3)
+}
+nav ul li:nth-child(4) {
+    background-color: var(--color4)
+}

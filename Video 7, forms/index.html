@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms, Input in HTML</title>
+</head>
+<body>
+    <h1>Form Tag</h1>
+    <p>action = get or get request is used for small data</p>
+    <p>action = post or post request is used when we need to pass large amounts of data</p>
+    <h5>Some Form below</h5>
+    <form action="post">
+        <label for="Username">Enter Your Username</label>
+        <input type="text" name="Username" placeholder="Enter Your Username" id="Username">
+        <p>There are a lot of attributes in the input tag</p>
+        <p>Label will add a label before a input field in a dag</p>
+        <div>
+            <p>having same name will cause make the radio select only one of them</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <p>In this one name is different</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">male</label>
+            <input type="radio" name="asd" id="female">
+            <label for="female">female</label>
+        </div>
+        <div>
+            <p>checkboxes</p>
+            <input type="checkbox" name="1" id="1">
+            <label for="1">Checkbox</label>
+        </div>
+        <div>
+            <label for="text">Enter Your Comment</label>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <p>Selection boxes</p>
+            <select name="fruits" id="">
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="orange">orange</option>
+            </select>
+            <select name="fruits" id="">
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="orange">orange</option>
+            </select>
+        </div>
+    </form>
+    
+</body>
+</html>

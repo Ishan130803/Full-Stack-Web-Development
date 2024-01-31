@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        figure {
+            height: 255px;
+            width: 255px;
+            background-color: antiquewhite;
+            float: left;
+
+        }
+        .cards {
+            border: 2px solid black;
+
+            /* prevents image overflow */
+            display: flow-root; 
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .cards .card:nth-child(3) {
+            /* It counts the figure element as a child so, nth child is 3 not 2 */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <figure></figure>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eligendi impedit aut dolorem architecto itaque dicta tenetur doloribus magnam doloremque accusantium inventore eveniet ea laboriosam blanditiis. Quam, iure. Optio voluptatibus molestias voluptate quibusdam a.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero voluptate ducimus corrupti delectus in beatae quasi dicta, aperiam dolore, quam dolor dolorum neque, quia pariatur soluta maxime ipsam. Assumenda provident optio ducimus id nostrum temporibus velit error, quis fugit, ratione, ab alias adipisci deleniti.</div>
+        <div class="card">card3</div>
+        <div class="card">card4</div>
+    </div>
+    
+</body>
+</html>

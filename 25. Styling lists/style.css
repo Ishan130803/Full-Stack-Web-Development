@@ -1,0 +1,29 @@
+nav {
+    margin: 4px;
+    padding: 4px;
+}
+
+.nav-2 ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+nav.nav-1 ul li {
+    list-style: None;
+}
+nav.nav-2 ul li {
+    list-style:  disc inside;
+    display: list-item;
+}
+nav.nav-3 ul li {
+    list-style: None;
+
+}
+nav.nav-4 ul li {
+    list-style: decimal-leading-zero;
+}
+* {
+    border: solid black 1px;
+    margin: 0px;
+}
