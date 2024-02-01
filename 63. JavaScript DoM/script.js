@@ -11,7 +11,23 @@ colors = ["red","green","blue","white","aqua","antiquewhite","beige","azure","bi
 
 
 // This works
-boxes = container.children
-for (let i of boxes) {
-  i.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
-}
+// let boxes = container.children
+// for (let i of boxes) {
+//   i.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+// }
+
+// THis works
+let boxes = Array.from(container.children)
+boxes.forEach(e => {
+  e.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+})
+
+
+
+// This doesn't WOrk
+// boxes = container.children
+// boxes.forEach(e => {
+//   e.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+// })
+
+
